@@ -1,0 +1,234 @@
+
+@media (max-width: 1200px) {
+    .header {
+      padding: 2rem 5%;
+    }
+    section {
+      padding: 3rem 0px;
+    }
+    .paralex{
+      height: 100% auto;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 0px;
+    }
+    .paralex{
+      height: 100% auto;
+    }
+    .contact { padding: 50px;}
+    .contact-container { flex-direction: column;}
+    .contact-container .contactInfo { margin-bottom: 40px; }
+  
+@keyframes paralex-animate {
+  0%,20% {
+    background: url('../image/Build2.JPG') no-repeat center;
+    background-attachment: fixed; background-size: 100% 100%;
+  }
+  25%,45% {
+    background: url('../Image/himgate2.JPG') no-repeat center;
+    background-attachment: fixed; background-size: 100% 100%;
+  }
+  50%,70% {
+    background: url('../Image/HIM_Building.jpg') no-repeat center;
+    background-attachment: fixed; background-size: 100% 100%;
+  }
+  75%,95% {
+    background: url('../Image/HIM-group.gif') no-repeat center;
+    background-attachment: fixed; background-size: 100% 100%;
+  }
+ }
+}
+ 
+
+  
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .page-container p { font-size: 18px; padding: 10px 20px; }
+  .page-container ul,ol,li { font-size: 18px; padding:10px 0 0 20px; }
+
+  .tab + label  { font-size: 18px; }
+
+}
+
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      right: -105%;
+      width: 30rem;
+      background: #fff;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      z-index: 1200;
+    }
+    .header .navbar #close-navbar {
+      display: block;
+    }
+    .header .navbar.active {
+      -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+              box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      right: 0;
+    }
+    .header .navbar ul {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+    
+    .header .collage-name { padding-left: 10px;} 
+    .header .icons {display: flex; flex-direction: row; width: 100px;  }
+
+    .paralex {
+      height: 100% auto;
+    }
+    .paralex-text h1 {
+      font-size: 24px; }
+    .home .slide .content h3 {
+      font-size: 3rem;
+    }
+
+    .container form{
+      overflow-y: scroll;
+  }
+  .container form::-webkit-scrollbar{
+     display: none;
+  }
+  form .fields .input-field{
+      width: calc(100% / 2 - 15px);
+  }
+
+  .back-img h2 { font: 26px/30px Georgia, serif; }
+
+  }
+  
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .header { padding: 1rem; height: 70px; }
+    .header .logo { font-size: 2.0rem; }
+
+    .header .collage-name { padding-left: 0px;} 
+    .header .icons {display: flex; flex-direction: row; width: 70px; }
+    .heading { font-size: 3rem; }
+
+    .paralex-head{ width: 100%; height: 600px; }
+
+    @keyframes paralex-animate {
+      0%,20% {
+        background: url('../image/Build2.JPG') no-repeat center;
+        background-attachment: fixed; background-size: 100% 100%;
+      }
+      25%,45% {
+        background: url('../Image/himgate2.JPG') no-repeat center;
+        background-attachment: fixed; background-size: 100% 100%;
+      }
+      50%,70% {
+        background: url('../Image/HIM_Building.jpg') no-repeat center;
+        background-attachment: fixed; background-size: 100% 100%;
+      }
+      75%,95% {
+        background: url('../Image/HIM-group.gif') no-repeat center;
+        background-attachment: fixed; background-size: 100% 100%;
+      }
+    }
+    
+    .about .content .about-title { font-size: 4rem; }
+
+    form .fields .input-field{
+      width: 100%;
+    }
+
+  
+    .page-container p { font-size: 16px; padding: 10px 10px; }
+    .page-container ul,ol,li { font-size: 16px; padding:10px 0 0 10px; }
+  
+    .tab + label  { font-size: 16px; }  
+
+  }
+
+
+
+
+
+
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+ .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .chat-button { left: 10px; bottom: 20px; }
+  .glass-container { width: 300px; }
+  .input input:focus { margin-bottom: 120px; }
+}
