@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <title>Admission Form 2022</title>
+</head>
+<body>
+
+    
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+           <img src="Image/logo.png" alt="collage logo" style="width: 80px; height: 55px; " /> 
+           <div class="collage-name">Hindu Institute of Management</div></a>
+     
+           <nav class="navbar">
+              <div id="close-navbar" class="close-icon"><img src="Image/close-icon.gif" width="50" /></div>
+  
+                 <ul class="navbar-links">
+  
+                <li class="navbar-dropdown">
+                  <a href="#">course</a>
+                  <div class="dropdown"><ul>
+                    <li><a href="#">Computer Department</a>
+                       <ul class='dropdown2'>
+                          <li><a href='BCA-course.html'>BCA Course</a></li>
+                          <li><a href='MCA-course.html'>MCA Course</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Management Department</a>
+                       <ul class='dropdown2'>
+                          <li><a href='BBA-course.html'>BBA Course</a></li>
+                          <li><a href='MBA-course.html'>MBA Course</a></li>
+                       </ul>
+                    </li>
+                 </ul>
+                  </div>
+                </li>
+  
+              <li class="navbar-dropdown">
+                  <a href="admission-form.html" target ="_blank" >Admissions</a> </li>
+                    
+                  <li class="navbar-dropdown">
+                    <a href="contact-us.html">Contact us</a> </li>
+  
+              <li class="navbar-dropdown">
+                  <a href="#">Other links</a> </li>
+          </ul>
+           </nav>
+     
+           <div id="menu-btn" class="header-icon"><img src="image/menu-icon.svg" alt="menu-icon" />
+             <img src="image/menu-icon-hover.gif" alt="menu-icon" width="30" class="header-icon-hover" /></div>
+        </div>
+     
+     </header>
+    
+
+<!--Admission form start-->
+
+<div class="form-section">
+    <div class="container">
+        <header>Registration</header>
+
+        <form method="post" name="admission-form">
+            <div class="form step step-1 active">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 1/4 )</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter your name" pattern="[A-z ]+" name="Full Name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth<span class="star">*</span></label>
+                            <input type="date" placeholder="Enter birth date" pattern="[0-9]" name="Date of Birth"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender<span class="star">*</span></label>
+                            <select  >
+                                <option disabled selected>Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email id" pattern="[a-z0-9.@]+"name="Email">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number<span class="star">*</span></label>
+                            <input type="tel" placeholder="Enter mobile number" pattern="[6789][0-9]{9}" size="10" name="Mobile Number" maxlength="10" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Type<span class="star">*</span></label>
+                            <select  >
+                                <option disabled selected>ID Type</option>
+                                <option value="Adhaar card" >Adhaar Card</option>      
+                                <option value="voter id">voter id</option>
+                                <option value="pan Card">pan card</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number<span class="star">*</span></label>
+                            <input type="text" placeholder="Enter ID number" pattern="[A-z0-9]{12}" name="ID Type" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Photograph <span class="star">*</span></label>
+                            <input type="file" accept=".png, .jpg" >
+                        </div>
+
+                    </div>                 
+                </div>
+
+                
+                    <div class="details Family">  
+                        <span class="title" style="margin-top: 40px;">Course Admission</span>
+    
+                        <div class="fields">
+                            <div class="input-field" style="width: 90%;">
+                                <label>Course you wish to join<span class="star">*</span></label>
+                                <select  >
+                                    <option disabled selected>Select Course</option>
+                                    <option value="BBA">BBA</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="MCA">MCA</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+               
+                   <button type="button"  class="next-btn"> Next
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                      
+            </div>
+                    
+                    
+                    
+              <div class="form step step-2">
+                <div class="details Family">  
+                    <span class="title">Family Details</span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 2/4 )</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father's Name <span class="star">*</span></label>
+                            <input type="text" value="Mr. " pattern="[A-z. ]+"name="" placeholder="Enter father's name" name="Father's Name" >
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Father's Occupation <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter father's occupation" pattern="[A-z ]+"name="Father's Occupation"  >
+                        </div>
+                        
+                         <div class="input-field">
+                            <label>Father's Mobile No. <span class="star">*</span></label>
+                            <input type="tel" placeholder="Enter Father number" pattern="[6789][0-9]{9}"name="Father's Mobile No." >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother's Name <span class="star">*</span></label>
+                            <input type="text" value="Mrs. " pattern="[A-z. ]+" name="" placeholder="Enter mother name" name="Mother's Name" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother's Occupation</label>
+                            <input type="text" placeholder="Enter Mother's occupation" pattern="[A-z ]+" name="Mother's Occupation" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Family annual Income </label>
+                            <input type="number" placeholder="Enter Family Income" pattern="[0-9]" name="Family annual Income" >
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <br><br>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Category <span class="star">*</span></label>
+                            <select name="category" >
+                                <option disabled selected>Select Category</option>
+                                <option value="General">General</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC/ST">SC/ST</option>
+                                <option value="EWS">EWS(Economically weaker section)</option> 
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Caste <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter Caste name" pattern="[A-z ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter Your Nationality" pattern="[A-z ]+">
+                        </div>
+
+                       
+                    </div>
+                </div> 
+
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type </label>
+                            <select  >
+                                <option disabled selected>Select Address type</option>
+                                <option>Permanent</option>
+                                <option>Temporary</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address Details <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter Your Address" pattern="[A-z0-9,-. ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pin code <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter Pin Code" pattern="[0-9]{6}" maxlength="6" >
+                        </div>
+
+                    </div>
+                </div>
+               
+                    
+                    <div class="buttons"> 
+                        <button type="button"  class="previous-btn">
+                            <i class="uil uil-navigator"></i> Back
+                        </button>
+                         <button type="button" class="next-btn">Next
+                         <i class="uil uil-navigator"></i></button>   
+                  </div>
+                  
+                 
+            </div>
+
+
+
+            <div class="form step step-3">
+                <div class="details address">
+                   <!-- <span style="font-size: 18px; text-decoration: underline; margin-bottom: 20px;" ><b>Education Qualification</b></span> -->
+                    
+                    <span class="title">Matriculation -Education</span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 3/4 )</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Year of Passing</label>
+                            <input type="number" min="2017" max="2021" step="1" value="2018" placeholder="Enter Passing year"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label> Board Name <span class="star">*</span></label>
+                            <input type="text" placeholder="Name of Board " pattern="[A-z-. ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name of school</label>
+                            <input type="text" placeholder="Enter school name" pattern="[A-z0-9-. ]+" name="" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Marks obtained / Total Marks <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter Marks (e.g 350/500 )" pattern="[0-9/.]{3}"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label>CGPA / % <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter CGPA or %"pattern="[A-z0-9.,% ]+"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Subject Offered</label>
+                            <input type="text" placeholder="Enter Subject Offered"  pattern="[A-z,. ]+"  >
+                        </div>
+                    </div>
+                    
+                    <span class="title">10th+2 / Xll -Education</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Year of Passing <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter Passing year"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label> Board Name <span class="star">*</span></label>
+                            <input type="text" placeholder="Name of Board "pattern="[A-z-. ]+"   >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Board Roll Number <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter Board roll number" number" pattern="[0-9]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Marks obtained / Total Marks <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter Marks (e.g 390/500 )" pattern="[0-9/.]+" )" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Percent % or CGPA
+                                <span class="star">*</span></label>
+                            <input type="number" placeholder="Enter Percent % or CGPA" pattern="[A-z0-9.,% ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Subject Offered <span class="star">*</span></label>
+                            <input type="text" placeholder="Enter Subject Offered" pattern="[A-z,. ]+" >
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                <div class="buttons"> 
+                    <button type="button"  class="previous-btn">
+                        <i class="uil uil-navigator"></i> Back
+                    </button>
+                     <button type="button" class="next-btn">Next
+                        <i class="uil uil-navigator"></i></button>   
+              </div>
+                
+            </div>
+
+
+            <div class="form step step-4">
+                <div class="details education">  
+                    <span class="title">Graduation </span>
+                    <span style="float: right; font-size: 16px; margin: 5px 35px;" >( step 4/4 )</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Year of Passing</label>
+                            <input type="number"min="2000" max="2022" step="1" value="2022"  placeholder="Enter Passing year"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label> Board / University Name </label>
+                            <input type="text" placeholder="Name of University " pattern="[A-z0-9-., ]+"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Course Name</label>
+                            <input type="text" placeholder="Enter Course Name" pattern="[A-z0-9-., ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Roll number</label>
+                            <input type="number" placeholder="Enter roll number" pattern="[A-z0-9-., ]+" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Percent % / CGPA</label>
+                            <input type="number" placeholder="Enter Percent % / CGPA" pattern="[A-z0-9.,% ]+" >
+                        </div>
+                    </div>                    
+                  
+                        <span class="title">Education ( Any Others) </span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Year of Passing</label>
+                                <input type="number"  min="2000" max="2022"  placeholder="Enter Passing year"  >
+                            </div>
+    
+                            <div class="input-field">
+                                <label> Board / University Name</label>
+                                <input type="text" placeholder="Name of University " pattern="[A-z0-9-., ]+"  >
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Course Name</label>
+                                <input type="text" placeholder="Enter Course Name"  >
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Percent %</label>
+                                <input type="number" placeholder="Enter Percent %"  >
+                            </div>
+
+                            <div class="input-field">
+                                <label>Academic Distinctions / Awards</label>
+                                <input type="number" placeholder="If any (optional)"  >
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Extra Curricular </label>
+                                <input type="text" placeholder="Name of University "  >
+                            </div>
+
+                        </div>
+                                      
+                <div class="buttons">
+                    <button type="button" class="previous-btn">
+                        <i class="uil uil-navigator"></i> Back
+                    </button>          
+                    <button type="submit" class="submit-btn"> Submit
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>                
+            
+                  
+                </div> 
+            </div>
+
+
+        </form>
+    </div>
+  </div>
+    
+
+
+
+<!-- footer section starts -->
+
+<footer style="background:url(Image/Speedline-50s-1846px.svg)">
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span>Hindu Insitute of Management</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/him.sonepat/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://directorhimsonepat@gmail.com/compose"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://instagram.com/official._.him" target="_blank" ><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/watch?v=UFhMLlQCQ7k&ab_channel=FunkyTeens" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">About</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Quick Links</li>
+          <li><a href="admission-form.html">Admission Form</a></li>
+          <li><a href="index.html">Notice Board</a></li>
+          <li><a href="#">University Site</a></li>
+        </ul>
+        <ul class="box">
+         <li class="link_name">Student's Corner</li>
+         <li><a href="fees-payment.html">Fees Payment</a></li>
+         <li><a href="complaint.html">Complaint Section</a></li>
+         <li><a href="#">University Login</a></li>
+         
+       </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="#">Admin Login</a></li>
+          <li><a href="#">My account</a></li>
+        </ul>
+        
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="email" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2022 | All rights reserved To Ajeet And Dev</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+ <!--footer section ends -->
+  
+
+ <!-- footer section ends -->
+ 
+ <script src="js/script.js"> </script>
+ 
+
+ <script>
+    const steps = Array.from(document.querySelectorAll("form .step"));  
+     const nextBtn = document.querySelectorAll("form .next-btn");  
+     const prevBtn = document.querySelectorAll("form .previous-btn");  
+     const form1 = document.querySelector("form");  
+     
+     nextBtn.forEach((button) => {  
+      button.addEventListener("click", () => {  
+       changeStep("next");  
+      });  
+     });  
+     prevBtn.forEach((button) => {  
+      button.addEventListener("click", () => {  
+       changeStep("prev");  
+      });  
+     });  
+     
+     function changeStep(btn) {  
+      let index = 0;  
+      const active = document.querySelector(".active");  
+      index = steps.indexOf(active);  
+      steps[index].classList.remove("active");  
+      if (btn === "next") {  
+       index++;  
+      } else if (btn === "prev") {  
+       index--;  
+      }  
+      steps[index].classList.add("active");  
+     }  
+    
+  
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVPNUoLSzqGlLrZ2l8LwaG8IRfmpTpvp3wlQ7iKRr0SuLrSVABhDSVlNpFTtQ_7Ds/exec'
+    const form = document.forms['admission-form']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for admission in our College..! We Will Contact You Soon.."))
+        .catch(error => console.error('Error!', error.message))
+  
+          
+  const inputs = [];  
+  form.querySelectorAll("input").forEach((input) => {  
+  const { name, value } = input;  
+  inputs.push({ name, value });  
+  });  
+  console.log(inputs);  
+  form.reset();  
+        
+    })
+  
+     
+  </script>
+  
+
+
+
+</body>
+</html>
