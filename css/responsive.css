@@ -213,6 +213,11 @@
   footer::before{
     top: 145px;
   }
+    
+ footer .content{
+max-width: 100%;
+padding: 20px; }
+    
   footer .content .top{
     flex-direction: column;
   }
