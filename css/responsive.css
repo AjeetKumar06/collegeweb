@@ -128,7 +128,6 @@
   }
 
   .back-img h2 { font: 26px/30px Georgia, serif; }
-
   }
   
 
@@ -140,7 +139,8 @@
     .header .logo { font-size: 2.0rem; }
 
     .header .collage-name { padding-left: 0px; font-size: 20px; } 
-    .header .icons {display: flex; flex-direction: row; width: 70px; }
+    .header .icons {display: flex; flex-direction: row; width: 80px; }
+    .header-icon .header-icon-hover { width: 35px;  }
     .heading { font-size: 3rem; }
 
     .paralex-head{ width: 100%; height: 600px; }
