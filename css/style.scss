@@ -289,50 +289,7 @@ section{
    }
 }
 
-.swiper-pagination-bullet-active{
-   background: $green;
-}
 
-.subjects{
-
-   .box-container{
-      @include grid(16rem);
-
-      .box{
-         padding:3rem 2rem;
-         text-align: center;
-         border:$border;
-         background: $light-green;
-         cursor: pointer;
-
-         &:hover{
-            background: $green;
-
-            h3{
-               color:$white;
-            }
-
-            p{
-               color:$light-white;
-            }
-         }
-
-         img{
-            height: 10rem;
-            margin-bottom: .7rem;
-         }
-
-         h3{
-            @include titleText(1.7rem);
-            padding:.5rem 0;
-         }
-
-         p{
-            @include graphText(1.5rem);
-         }
-      }
-   }
-}
 
 .home-courses{
 
@@ -437,51 +394,6 @@ section{
    }
 }
 
-.teachers{
-
-   .slide{
-      text-align: center;
-
-      &:hover{
-
-         .image{
-            img{
-               background: $green;
-            }
-
-            .share{
-               bottom: 0;
-            }
-         }
-      }
-
-      .image{
-         position: relative;
-         overflow: hidden;
-
-         img{
-            background: $light-green;
-            width: 100%;
-         }
-
-         .share{
-            position: absolute;
-            bottom: -10rem; left:0; right:0;
-            background: rgba(0,0,0,.8);
-            padding:2rem;
-
-            a{
-               font-size: 3rem;
-               margin:0 1rem;
-               color:$white;
-
-               &:hover{
-                  color:$green;
-               }
-            }
-         }
-      }
-
       .content{
          display: flex;
          padding-top: 1rem;
@@ -542,84 +454,6 @@ section{
       }
    }
 }
-
-.courses{
-
-   .box-container{
-      @include grid(30rem);
-
-      .box{
-
-         &:hover .image img{
-            transform: scale(1.1);
-         }
-
-         &.hide{
-            display: none;
-         }
-
-         .image{
-            height: 25rem;
-            overflow: hidden;
-            position: relative;
-
-            img{
-               height: 100%;
-               width: 100%;
-               object-fit: cover;
-            }
-
-            h3{
-               @include titleText(1.5rem);
-               position: absolute;
-               top:1rem; left:1rem;
-               padding:.5rem 1.5rem;
-               background: $white;
-
-            }
-         }
-
-         .content{
-            padding:2rem;
-            text-align: center;
-            border:$border;
-
-            h3{
-               @include titleText(2rem);
-            }
-
-            p{
-               padding:1rem 0;
-               @include graphText(1.6rem);
-            }
-
-            .icons{
-               display: flex;
-               align-items: center;
-               justify-content: space-between;
-               margin-top: 2rem;
-               padding-top: 2rem;
-               border-top: $border;
-
-               span{
-                  @include titleText(1.5rem);
-
-                  i{
-                     color:$green;
-                     padding-right: .5rem;
-                  }
-               }
-            }
-         }
-      }
-   }
-
-   .load-more{
-      margin-top: 2rem;
-      text-align: center;
-   }
-}
-
 .contact{
 
    .icons-container{
@@ -703,66 +537,6 @@ section{
    }
 }
 
-.faq{
-
-   .accordion-container{
-      display: flex;
-      flex-wrap: wrap;
-      gap:2rem;
-      align-items: flex-start;
-
-      .accordion{
-         flex:1 1 40rem;
-         border:$border;
-
-         &.active{
-
-            .accordion-heading{
-               background: $green;
-
-               h3{
-                  color:$white;
-               }
-
-               i{
-                  color:$white;
-                  transform: rotate(180deg);
-               }
-            }
-
-            .accordion-content{
-               display: block;
-            }
-         }
-
-         .accordion-heading{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap:1rem;
-            cursor: pointer;
-            padding:1.5rem;
-
-            h3{
-               @include titleText(2rem);
-            }
-
-            i{
-               font-size: 2rem;
-               color:$green;
-            }
-         }
-
-         .accordion-content{
-            padding:1.5rem;
-            @include graphText(1.5rem);
-            border-top: $border;
-            display: none;
-         }
-      }
-   }
-}
-
 .logo-container{
    text-align: center;
 
@@ -841,20 +615,6 @@ section{
          }
       }
    }
-
-   .credit{
-      text-align: center;
-      margin-top: 3rem;
-      padding-top: 3rem;
-      @include titleText(2rem);
-      border-top: $border;
-
-      span{
-         color:$green;
-      }
-   }
-}
-
 
 
 
